@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
     // first movie
     function imgPoster() {
-        fetch("http://localhost:3000/films/1")
+        fetch("http://localhost:3000/films/7")
             .then((response) => response.json())
             .then((data) => {
                 const imageHolder = document.getElementById("poster");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             });
     }
     function movieDetails() {
-        fetch("http://localhost:3000/films/8")
+        fetch("http://localhost:3000/films/7")
             .then((response) => response.json())
             .then((data) => {
                 const title = document.getElementById("title");
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
                         };
 
                         //PATCH 
-                        fetch("http://localhost:3000/films/8", {
+                        fetch("http://localhost:3000/films/7", {
                             method: "PATCH",
                             headers: {
                                 "Content-Type": "application/json",
